@@ -1,0 +1,12 @@
+@use "../helpers/variables" as *;
+@mixin main-button {
+  background-color: $main-blue;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}

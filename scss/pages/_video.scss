@@ -1,0 +1,35 @@
+.video {
+  .container {
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      @media (max-width: 1100px) {
+        flex-direction: column-reverse;
+        .col:nth-child(2) {
+          text-align: center;
+        }
+      }
+      .video-container {
+        max-width: 100%;
+        video {
+          width: 100%;
+        }
+      }
+    }
+    .col:nth-child(2) {
+      @media (max-width: 1100px) {
+        max-width: 100%;
+      }
+      max-width: 30%;
+      h2 {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      p {
+        line-height: 1.9;
+      }
+    }
+  }
+}

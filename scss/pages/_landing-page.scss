@@ -1,0 +1,41 @@
+@use "./button" as *;
+
+.main {
+  .row {
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 100px;
+    @media (max-width: 900px) {
+      margin: auto;
+    }
+    gap: 80px;
+    .col.text {
+      @media (max-width: 900px) {
+        max-width: 80%;
+        text-align: center;
+      }
+      max-width: 40%;
+      h1 {
+        font-weight: 400;
+        font-family: sans-serif;
+      }
+      p {
+        color: #565656;
+        line-height: 1.6;
+      }
+      a {
+        @include main-button;
+      }
+    }
+    .col {
+      flex-grow: 5;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

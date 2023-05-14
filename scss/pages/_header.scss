@@ -1,0 +1,51 @@
+@use "../helpers/variables" as *;
+.header {
+  .container {
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    @media (max-width: 650px) {
+      justify-content: space-around;
+    }
+    i {
+      display: none;
+      @media (max-width: 650px) {
+        display: block;
+      }
+    }
+    > ul {
+      @media (max-width: 650px) {
+        display: none;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      li {
+        list-style: none;
+        font-family: sans-serif;
+        cursor: pointer;
+        transition: color 1s ease;
+        transition: background-color 1.2s ease;
+        transition: transform 0.1s;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+          background-color: blue;
+          color: white !important;
+        }
+        &:hover {
+          color: $main-blue;
+        }
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}

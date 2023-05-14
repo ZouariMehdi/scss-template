@@ -1,0 +1,12 @@
+body {
+  font-family: "Abel", sans-serif !important;
+  margin: 0;
+  background-color: rgba(232, 232, 232, 0.486) !important;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  @media (max-width: 680px) {
+    width: 100%;
+  }
+}
